@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Main from '../src/components/main/Main'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -25,15 +26,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="#">Cinema App</a>
-        </h1>
-
+      {/* <main className={styles.main}> */}
+        <Main/>
       
 
       
-      </main>
+      {/* </main> */}
 
       <footer className={styles.footer}>
         <a
