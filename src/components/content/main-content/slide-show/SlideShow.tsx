@@ -7,7 +7,7 @@ interface PropsIndicators {
 interface imagesType {
   url: string;
 }
-interface propsIndecator {
+interface propsIndicators  {
   currentSlide: Number;
 }
 interface propsSliderShow {
@@ -90,7 +90,7 @@ const SlideShow: React.FC<propsSliderShow> = ({ images, auto }) => {
       </div>
     );
   };
-  const Indicators = (props: propsIndecator) => {
+  const Indicators = (props: propsIndicators ) => {
     const { currentSlide } = props;
     const listIndicators = images.map((slide, index) => {
       const btnClasses =
