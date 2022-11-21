@@ -26,7 +26,7 @@ const SlideShow: React.FC<propsSliderShow> = ({ images, auto }) => {
   let currentSlideIndex = 0;
   useEffect(() => {
     if (auto) {
-      const timeInterval = setInterval(() => {
+      const timeInterval = window.setInterval(() => {
         autoMoveSlide();
       }, 5000);
     
